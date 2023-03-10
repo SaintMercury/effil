@@ -34,6 +34,7 @@ jobs:
         pip install hererocks
         hererocks lua-pkg --${{ matrix.lua }} -rlatest --target ${{matrix.platform.forLua}}
         cmd ${{github.workspace}}\lua-pkg\bin\activate
+        dir ${{github.workspace}}\lua-pkg\lib\
 
     - name: Configure CMake & build
       run: |
