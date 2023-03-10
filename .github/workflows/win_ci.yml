@@ -47,3 +47,8 @@ jobs:
        STRESS: 1
       run: |
         ${{github.workspace}}/lua-pkg/bin/lua ../tests/lua/run_tests
+
+    - name: Download DLL
+      id: download-artifact
+      uses: dawidd6/action-download-artifact@v2
+      name: effil.dll
