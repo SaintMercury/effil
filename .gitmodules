@@ -4,3 +4,6 @@
 [submodule "libs/u-test"]
 	path = libs/u-test
 	url = https://github.com/IUdalov/u-test.git
+[submodule "libs/lua"]
+	path = libs/lua
+	url = https://github.com/LuaJIT/LuaJIT.git
